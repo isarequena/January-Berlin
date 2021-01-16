@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example website</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Burning Amazon</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h4 class="logo">amazon forest</h4>
+        <ul class="nav-list">
+          <li class="nav-link">
+            <!-- a tags (anchor tags) are used to link either to an external website or our own -->
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-link">
+            <a href="#plans">Plans</a>
+          </li>
+          <li class="nav-link">
+            <a href="#about">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="reviews">
+      <div class="jumbotron">
+        <div class="jumbotron-text">
+             <button>Buy now</button>
+        </div>
+      </div>
+      <h1>Customer’s reviews</h1>
+      <div>
+        <h2>Trump</h2>
+
+        <div class="customer-icon">
+            <img src="./images/trump.png" alt="Customer Picture" />        
+        </div>
+        <p>
+            ''It has never been so cheap''
+        </p>
+        <h2>Nestle</h2>
+        <p>
+            ''Cheapest soja of the world''
+        </p>
+        <div class="customer-icon"><img src="./images/nestle.png" alt="Customer Picture" /></div>   
+      </div>
+      <div>
+       
+      </div>
+     
+    </section>
+
+    <section id="plans">
+      <div class="card">
+        <h2>Standard Boring Biodiverse</h2>
+        <ol>
+          <li>Land and watersource included</li>
+          <li>Indigenous communities included</li>
+          <li>Prepare to meet mosquitos</li>
+        </ol>
+        <button>Free</button>
+      </div>
+      <!-- hr stands for horizontal ruler, it creates a line in our webpage. It's a self closing tag -->
+      <hr />
+
+      <div class="card">
+        <h2>Premium Fire Lava</h2>
+        <ol>
+          <li>All items from Standard Boring Bio are not included</li>
+          <li>No animal testing, we took care of the animals for you</li>
+          <li> It’s hot, seriously hot, and hot is sexy</li>
+          <li>Colorful is sooo 90s, get the monocromatic forest. Two options available: indigenous blood or pure grey ashes</li>
+        </ol>
+        <button>100$ p/month</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>Amazon Seller</h3>
+      <p>
+       Contact our CEO   <a href=" https://falepr.presidencia.gov.br/form/#"> click</a>
+      </p>
+      <div class="bandido"><img src="./images/bolsonaro.jpg" width="" height="200" alt="Customer Picture" /></div>
+
+      <h4>Keep up to date with the newest fires!</h4>
+    </section>
+
+    <footer>
+      <span>Copyright 2020 | Amazon Burn Industries</span>
+    </footer>
+  </body>
 </html>

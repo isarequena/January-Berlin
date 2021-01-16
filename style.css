@@ -1,0 +1,254 @@
+/* Style Reset & variables */
+:root {
+    --dark-color: #282e34;
+    --light-color: #f4f4f4;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+  }
+  
+  /* Header */
+  
+  header {
+    color: #edf0f1;
+  }
+  
+  /* navbar */
+  nav {
+    width: 100%;
+    background-color: #880f24;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    display: flex;
+    width: 300px;
+    margin-right: 20px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  
+  /* float right pushes the ul (nav-list) to the right of the screen */
+  /* .nav-list {
+    float: right;
+  } */
+  /* display inline-block turns the elements into inline elements, so they don't occupy the whole width of the screen */
+  /* nav * {
+    color: #edf0f1;
+    display: inline-block;
+  } */
+  
+  .nav-link a {
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .logo {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* jumbotron */
+  
+  .jumbotron {
+    width: 95%;
+    height: 800px;
+    min-height: 100%;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .jumbotron-text {
+    /*background-color: var(--dark-color);*/
+    justify-content:space-around;
+  }
+  
+  button {
+    background-color: #9F1919;
+    color: #dddddd;
+    border: 2px solid #9F1919;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .jumbotron button {
+    width: 200px;
+    height: 50px;
+    top: 300px;
+   
+  }
+
+  
+  /* reviews Section */
+  
+  #reviews {
+    background-color: var(--light-color);
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #reviews .center {
+    margin: 50px 1% 0 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reviews div {
+    margin: 100px 1% 0 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #reviews p {
+    max-width: 50%;
+  }
+  
+  #reviews h2 {
+    width: 100%;
+  }
+  
+  #reviews img {
+    max-width: 40%;
+  }
+  
+  .customer-icon img {  
+    border-radius: 50%;
+    max-width: 50px;
+  }
+  /* Plans Section */
+  
+  #plans {
+    background-color: #9F1919;
+    color: #ddd;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    width: 300px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  
+  .card ol {
+    margin: 30px 0;
+    text-align: left;
+    list-style: square;
+  }
+  
+  hr {
+    max-width: 50%;
+    border-color: var(--light-color);
+  }
+  
+  /* About */
+  
+  #about {
+    background-color: var(--light-color);
+    color: #666;
+    margin: 50px 10%;
+  }
+  
+  form {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-email {
+    width: 70%;
+    height: 28px;
+  }
+  
+  .form-input {
+    cursor: pointer;
+    background-color: #0069d9;
+    color: #ddd;
+    border: 2px solid #0069d9;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: var(--dark-color);
+    color: #666;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  
+  footer a {
+    color: #666;
+    text-decoration: none;
+  }
+
+  .bandido img {
+    border-radius: 50%;
+   }
+  
+  /* This media query just turns the page back to a column-based design once the screen gets smaller */
+  
+  @media screen and (max-width: 800px) {
+    #reviews div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #reviews h2 {
+      width: auto;
+    }
+  
+    #plans hr {
+      width: 50%;
+    }
+  
+    #plans {
+      flex-direction: column;
+    }
+  
+    #about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form {
+      flex-direction: column;
+      align-items: center;
+      height: 70px;
+    }
+  }
